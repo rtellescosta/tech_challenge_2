@@ -31,10 +31,6 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   Local: `scripts/ingestao/yfinance.ipynb`  
   Responsável por extrair os dados das ações e realizar o upload para o S3.
 
-  >
-  > ![S3 Raw](imagens/s3-raw.png)
-  > ![S3 Raw-2](imagens/s3-raw-2.png)
-
   <p>
     <img src="imagens/s3-raw.png" alt="S3 Raw" width="400"/>
     <img src="imagens/s3-raw-2.png" alt="S3 Raw-2" width="400"/>
