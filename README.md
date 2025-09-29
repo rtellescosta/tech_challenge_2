@@ -31,13 +31,17 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   Local: `scripts/ingestao/yfinance.ipynb`  
   Responsável por extrair os dados das ações e realizar o upload para o S3.
 
-  > **Sugestão:** Insira aqui uma imagem de exemplo do arquivo bruto no S3 (raw).
   >
   > ![S3 Raw](imagens/s3-raw.png)
   > ![S3 Raw-2](imagens/s3-raw-2.png)
 
+  <p>
+    <img src="imagens/s3-raw.png" alt="S3 Raw" width="200"/>
+    <img src="imagens/s3-raw-2.png" alt="S3 Raw-2" width="200"/>
+  </p>
+
 - **Configuração da Notificação S3 → Lambda:**  
-  > **Sugestão:** Insira aqui uma imagem da configuração da notificação do S3 acionando a Lambda.
+  
   >
   > ![Notificação S3-Lambda](imagens/s3-lambda-notification.png)
 
