@@ -44,6 +44,8 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   Local: `scripts/lambda/lambda_function.py`  
   Responsável por acionar o Glue Job ao receber a notificação do S3.
 
+    <img src="imagens/lambda.png" alt="Lambda" height="250"/>
+ 
 - **Glue Job:**  
   Local: `scripts/glue/raw_stage.py`  
   Realiza as transformações necessárias: agrupamento numérico, renomeação de colunas e cálculos baseados em datas.
