@@ -38,8 +38,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
 - **Configuração da Notificação S3 → Lambda:**  
   
-  >
-  > ![Notificação S3-Lambda](imagens/s3-lambda-notification.png)
+    <img src="imagens/s3-lambda-notification.png" alt="Notificação S3-Lambda" height="250"/>
 
 - **Função Lambda:**  
   Local: `scripts/lambda/lambda_function.py`  
