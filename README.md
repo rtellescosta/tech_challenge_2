@@ -50,9 +50,12 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   Local: `scripts/glue/raw_stage.py`  
   Realiza as transformações necessárias: agrupamento numérico, renomeação de colunas e cálculos baseados em datas.
 
-  > **Sugestão:** Insira aqui uma imagem do S3 final com os dados particionados.
-  >
-  > ![S3 Particionado](imagens/s3-particionado.png)
+    <img src="imagens/glue-job.png" alt="glue-job" height="250"/>
+  
+    <img src="imagens/s3-particionado.png" alt="s3-particionado" height="250"/>
+    <img src="imagens/s3-particionado2.png" alt="s3-particionado" height="250"/>
+    <img src="imagens/s3-particionado3.png" alt="s3-particionado" height="250"/>
+
 
 ---
 
