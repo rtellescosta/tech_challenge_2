@@ -36,8 +36,8 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   > ![S3 Raw-2](imagens/s3-raw-2.png)
 
   <p>
-    <img src="imagens/s3-raw.png" alt="S3 Raw" width="200"/>
-    <img src="imagens/s3-raw-2.png" alt="S3 Raw-2" width="200"/>
+    <img src="imagens/s3-raw.png" alt="S3 Raw" width="400"/>
+    <img src="imagens/s3-raw-2.png" alt="S3 Raw-2" width="400"/>
   </p>
 
 - **Configuração da Notificação S3 → Lambda:**  
