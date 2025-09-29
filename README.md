@@ -21,7 +21,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
 > **Sugestão:** Insira aqui um diagrama ilustrando a arquitetura do pipeline.
 >
-> ![Diagrama da Arquitetura](CAMINHO/diagrama-arquitetura.png)
+> ![Diagrama da Arquitetura](imagens/diagrama-arquitetura.png)
 
 ---
 
@@ -33,12 +33,13 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
   > **Sugestão:** Insira aqui uma imagem de exemplo do arquivo bruto no S3 (raw).
   >
-  > ![S3 Raw](CAMINHO/s3-raw.png)
+  > ![S3 Raw](imagens/s3-raw.png)
+  > ![S3 Raw-2](imagens/s3-raw-2.png)
 
 - **Configuração da Notificação S3 → Lambda:**  
   > **Sugestão:** Insira aqui uma imagem da configuração da notificação do S3 acionando a Lambda.
   >
-  > ![Notificação S3-Lambda](CAMINHO/s3-lambda-notification.png)
+  > ![Notificação S3-Lambda](imagens/s3-lambda-notification.png)
 
 - **Função Lambda:**  
   Local: `scripts/lambda/lambda_function.py`  
@@ -50,7 +51,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
   > **Sugestão:** Insira aqui uma imagem do S3 final com os dados particionados.
   >
-  > ![S3 Particionado](CAMINHO/s3-particionado.png)
+  > ![S3 Particionado](imagens/s3-particionado.png)
 
 ---
 
@@ -61,17 +62,17 @@ Após o processamento, os dados podem ser analisados diretamente no Athena.
 - **Tabela criada pelo Glue Job:**  
   > **Sugestão:** Insira aqui uma imagem da tabela criada no Athena.
   >
-  > ![Tabela Athena](CAMINHO/athena-table.png)
+  > ![Tabela Athena](imagens/athena-table.png)
 
 - **Definição da Tabela no Glue:**  
   > **Sugestão:** Insira aqui uma imagem da definição da tabela no Glue.
   >
-  > ![Definição Glue](CAMINHO/glue-table-definition.png)
+  > ![Definição Glue](imagens/glue-table-definition.png)
 
 - **Exemplo de Consulta e Visualização dos Dados Finais:**  
   > **Sugestão:** Insira aqui uma imagem mostrando os dados finais no Athena.
   >
-  > ![Consulta Athena](CAMINHO/athena-query-result.png)
+  > ![Consulta Athena](imagens/athena-query-result.png)
 
 ---
 
@@ -114,4 +115,4 @@ Em caso de dúvidas ou sugestões, entre em contato com o responsável pelo proj
 
 ---
 
-> **Observação:** Substitua os caminhos das imagens (`CAMINHO/arquivo.png`) pelos arquivos reais após adicioná-los ao repositório.
+> **Observação:** Substitua os caminhos das imagens (`imagens/arquivo.png`) pelos arquivos reais após adicioná-los ao repositório.
