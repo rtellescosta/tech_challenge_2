@@ -51,7 +51,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
   Realiza as transformações necessárias: agrupamento numérico, renomeação de colunas e cálculos baseados em datas.
 
     <img src="imagens/glue-job.png" alt="glue-job" height="250"/>
-  
+    <br> 
     <img src="imagens/s3-particionado.png" alt="s3-particionado" height="250"/>
     <img src="imagens/s3-particionado2.png" alt="s3-particionado" height="250"/>
     <img src="imagens/s3-particionado3.png" alt="s3-particionado" height="250"/>
