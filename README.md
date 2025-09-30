@@ -19,7 +19,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 4. A Lambda aciona um Glue Job para processar e transformar os dados.
 5. O resultado é salvo novamente no S3, particionado, pronto para análise via Athena.
 
-> **Sugestão:** Insira aqui um diagrama ilustrando a arquitetura do pipeline.
+
 >
 > ![Diagrama da Arquitetura](imagens/diagrama-arquitetura.png)
 
@@ -30,6 +30,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 - **Ingestão de Dados (yfinance):**  
   Local: `scripts/ingestao/yfinance.ipynb`  
   Responsável por extrair os dados das ações e realizar o upload para o S3.
+  O particionamente é realizado baseado na data da extração. Cada extração pode conter um ou mais dias de pregao. Isso será separado na camada refined.
 
   <p>
     <img src="imagens/s3-raw.png" alt="S3 Raw" width="400"/>
@@ -65,19 +66,19 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 Após o processamento, os dados podem ser analisados diretamente no Athena.
 
 - **Tabela criada pelo Glue Job:**  
-  > **Sugestão:** Insira aqui uma imagem da tabela criada no Athena.
-  >
+
   > ![Tabela Athena](imagens/athena-table.png)
+  <img src="imagens/athena-table.png" alt="athena-table" height="300"/>
 
 - **Definição da Tabela no Glue:**  
-  > **Sugestão:** Insira aqui uma imagem da definição da tabela no Glue.
-  >
-  > ![Definição Glue](imagens/glue-table-definition.png)
+
+  <img src="imagens/glue-table-definition.png" alt="glue-table-definition" height="300"/>
 
 - **Exemplo de Consulta e Visualização dos Dados Finais:**  
-  > **Sugestão:** Insira aqui uma imagem mostrando os dados finais no Athena.
-  >
-  > ![Consulta Athena](imagens/athena-query-result.png)
+
+  <img src="imagens/athena-query-result.png" alt="athena-query-result" height="300"/>
+  <br>
+  <img src="imagens/athena-query-result2.png" alt="athena-query-result2" height="300"/>
 
 ---
 
@@ -119,5 +120,3 @@ Após o processamento, os dados podem ser analisados diretamente no Athena.
 Em caso de dúvidas ou sugestões, entre em contato com o responsável pelo projeto.
 
 ---
-
-> **Observação:** Substitua os caminhos das imagens (`imagens/arquivo.png`) pelos arquivos reais após adicioná-los ao repositório.
