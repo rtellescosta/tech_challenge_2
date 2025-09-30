@@ -63,7 +63,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
 ## 4. Athena
 
-Após o processamento, os dados podem ser analisados diretamente no Athena.
+Após o processamento, os dados podem ser analisados diretamente no Athena. As particões dessa tabela são automaticamente atualizadas pelo codigo no glue
 
 - **Tabela criada pelo Glue Job:**  
 
