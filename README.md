@@ -4,7 +4,7 @@
 
 Este projeto consiste na construção de um pipeline de dados completo para extrair, processar e analisar dados de ações ou índices da B3, utilizando os serviços AWS S3, Glue, Lambda e Athena. 
 
-A extração dos dados é realizada com a biblioteca [yfinance](https://github.com/ranaroussi/yfinance), coletando informações de 10 ações da B3. O objetivo final é apresentar a evolução percentual (positiva ou negativa) de cada papel em relação ao seu dia anterior.
+A extração dos dados é realizada com a biblioteca [yfinance](https://github.com/ranaroussi/yfinance), coletando informações de 10 ações da B3. O objetivo final é apresentar a evolução percentual (positiva ou negativa) de cada papel em relação ao seu dia seguinte.
 
 ---
 
@@ -67,15 +67,15 @@ Após o processamento, os dados podem ser analisados diretamente no Athena.
 
 - **Tabela criada pelo Glue Job:**  
 
-  > ![Tabela Athena](imagens/athena-table.png)
   <img src="imagens/athena-table.png" alt="athena-table" height="300"/>
 
 - **Definição da Tabela no Glue:**  
 
-  <img src="imagens/glue-table-definition.png" alt="glue-table-definition" height="300"/>
+  <img src="imagens/glue-table-definition.png" alt="glue-table-definition" height="400"/>
 
 - **Exemplo de Consulta e Visualização dos Dados Finais:**  
-
+  A coluna prox_valor apresenta a evolução percentual (positiva ou negativa) de cada papel em relação ao seu dia seguinte
+  
   <img src="imagens/athena-query-result.png" alt="athena-query-result" height="300"/>
   <br>
   <img src="imagens/athena-query-result2.png" alt="athena-query-result2" height="300"/>
@@ -112,11 +112,5 @@ Após o processamento, os dados podem ser analisados diretamente no Athena.
 - [Documentação AWS Lambda](https://docs.aws.amazon.com/pt_br/lambda/latest/dg/welcome.html)
 - [Documentação AWS Athena](https://docs.aws.amazon.com/pt_br/athena/latest/ug/what-is.html)
 - [yfinance](https://github.com/ranaroussi/yfinance)
-
----
-
-## 8. Contato
-
-Em caso de dúvidas ou sugestões, entre em contato com o responsável pelo projeto.
 
 ---
