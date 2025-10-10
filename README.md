@@ -21,7 +21,7 @@ O pipeline foi desenhado para simular um agente externo que periodicamente envia
 
 
 >
-> ![Diagrama da Arquitetura](imagens/diagrama-arquitetura.png)
+> ![Diagrama da Arquitetura](imagens/arquitetura.png)
 
 ---
 
